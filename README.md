@@ -1,10 +1,25 @@
 # CSES Solutions 🚀
-My C++ solutions for the CSES Problem Set.
 
-## Notes & Core Logic
-* **Weird Algorithm**: Simulation. Beware of `long long` overflow during the $3n+1$ process.
-* **Missing Number**: Math sum. Use $n(n+1)/2$ minus the actual sum.
-* **Repetitions**: Linear scan / Sliding window. Keep track of current and max streak.
-* **Increasing Array**: Greedy strategy. Always make the current element equal to the previous one if it's smaller.
-* **Permutations**: Construction. Print all even numbers first, then all odd numbers to avoid adjacent difference of 1.
-* **Number Spiral**: Math pattern. Determine the layer using $max(y, x)$, and use parity (odd/even) to find the direction.
+This repository contains my C++ solutions for the [CSES Problem Set](https://cses.fi/problemset/). 
+Currently focusing on building fundamental algorithmic thinking and mathematical modeling skills.
+
+## 📝 Problem Notes & Logic Patterns
+
+| # | Problem | Core Logic / Pattern | Key Insight |
+| :--- | :--- | :--- | :--- |
+| 1 | **Weird Algorithm** | Simulation | Use `long long` to prevent overflow during the $3n+1$ process. |
+| 2 | **Missing Number** | Mathematics | Calculate the expected sum $n(n+1)/2$ and subtract the actual sum. |
+| 3 | **Repetitions** | Linear Scan | Track the current streak and update the global maximum. |
+| 4 | **Increasing Array** | Greedy Strategy | Always increase the current element to match the previous one to minimize moves. |
+| 5 | **Permutations** | Construction | Group **even** numbers first, then **odd** numbers to ensure adjacent difference $\ge 2$. |
+| 6 | **Number Spiral** | Math & Parity | Use $max(y, x)$ to identify the "layer" and parity (odd/even) to determine direction. |
+| 7 | **Two Knights** | Complementary Counting | Total ways $C(k^2, 2)$ minus attacking pairs found in $2 \times 3$ and $3 \times 2$ blocks. |
+
+## 🛠️ Tech Stack
+* **Language:** C++17
+* **Environment:** VS Code (MinGW-w64)
+* **Strategy:** Efficient $O(n)$ or $O(1)$ solutions with Fast I/O.
+
+## 📈 Progress
+- [x] Introductory Problems (7 / 19)
+- [ ] Sorting and Searching (0 / 35)
